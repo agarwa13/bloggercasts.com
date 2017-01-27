@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'Bloggercasts',
 
     /*
     |--------------------------------------------------------------------------
@@ -178,6 +178,8 @@ return [
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
+        // Adding User Verification Service Provider to verify Email Address on Registration
+        // Jrean\UserVerification\UserVerificationServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
     ],
@@ -228,6 +230,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        // Adding User Verification Facade to verify Users Email Address upon Registration
+        'UserVerification' => Jrean\UserVerification\Facades\UserVerification::class
 
     ],
 
