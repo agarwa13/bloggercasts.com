@@ -18,6 +18,8 @@ require('spark-bootstrap');
 
 require('./components/bootstrap');
 
+require('./components/kiosk/affiliates');
+
 var app = new Vue({
     mixins: [require('spark')]
 });

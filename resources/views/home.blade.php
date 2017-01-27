@@ -1,6 +1,6 @@
-@extends('spark::layouts.app')
+@extends('layouts.app')
 
-@section('content')
+@section('body')
 <home :user="user" inline-template>
     <div class="container">
         <!-- Application Dashboard -->

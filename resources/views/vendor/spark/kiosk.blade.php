@@ -39,6 +39,14 @@
                                         <i class="fa fa-fw fa-btn fa-user"></i>Users
                                     </a>
                                 </li>
+
+                                <!-- Affiliates Link -->
+                                <li role="presentation">
+                                    <a href="#affiliates" aria-controls="affiliates" role="tab" data-toggle="tab">
+                                        <i class="fa fa-fw fa-btn fa-money"></i>Affiliates
+                                    </a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -62,6 +70,11 @@
                     <div role="tabpanel" class="tab-pane" id="users">
                         @include('spark::kiosk.users')
                     </div>
+
+                    <!-- Affiliates Management -->
+                    <div role="tabpanel" class="tab-pane" id="affiliates">
+                        @include('kiosk.affiliates')
+                    </div>                    
                 </div>
             </div>
         </div>

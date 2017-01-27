@@ -13,11 +13,11 @@ class SparkServiceProvider extends ServiceProvider
      * @var array
      */
     protected $details = [
-        'vendor' => 'Your Company',
-        'product' => 'Your Product',
-        'street' => 'PO Box 111',
-        'location' => 'Your Town, NY 12345',
-        'phone' => '555-555-5555',
+        'vendor' => 'Engineering Mastered',
+        'product' => 'Bloggercasts.com',
+        'street' => '2900 1st Ave APT N302',
+        'location' => 'Seattle, WA 98121',
+        'phone' => '206-569-8739',
     ];
 
     /**
@@ -33,7 +33,7 @@ class SparkServiceProvider extends ServiceProvider
      * @var array
      */
     protected $developers = [
-        //
+        'nikhil@bloggercasts.com'
     ];
 
     /**
@@ -41,7 +41,7 @@ class SparkServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $usesApi = true;
+    protected $usesApi = false;
 
     /**
      * Finish configuring Spark for the application.
@@ -50,17 +50,18 @@ class SparkServiceProvider extends ServiceProvider
      */
     public function booted()
     {
-        Spark::useStripe()->noCardUpFront()->trialDays(10);
+        // Spark::useStripe()->noCardUpFront()->trialDays(10);
 
         Spark::freePlan()
             ->features([
-                'First', 'Second', 'Third'
+                'Unlimited Access',
+                'Download Printables'
             ]);
 
-        Spark::plan('Basic', 'provider-id-1')
-            ->price(10)
-            ->features([
-                'First', 'Second', 'Third'
-            ]);
+        // Spark::plan('Basic', 'provider-id-1')
+        //     ->price(10)
+        //     ->features([
+        //         'First', 'Second', 'Third'
+        //     ]);
     }
 }
