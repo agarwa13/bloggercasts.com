@@ -34,13 +34,22 @@ Route::get('lessons/amp/{slug}','LessonController@showAMP');
 Series Resource
 */
 Route::resource('series','SeriesController');
-
-
 /*
 Download Resource
 */
 Route::resource('downloads','DownloadController');
 
+
+
+/*
+ * Sitemap Controller
+ */
+Route::get('sitemap','SitemapController@index');
+Route::get('sitemap/series','SitemapController@series');
+Route::get('sitemap/lessons','SitemapController@lessons');
+Route::get('sitemap/amp','SitemapController@amp');
+Route::get('sitemap/videos','SitemapController@videos');
+Route::get('sitemap/general','SitemapController@general');
 
 
 /*
