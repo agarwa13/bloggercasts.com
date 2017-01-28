@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse" id="spark-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                &nbsp;
+                <li><a href="/series" class="navbar-link">Browse Series</a></li>
             </ul>
 
             <!-- Right Side Of Navbar -->
