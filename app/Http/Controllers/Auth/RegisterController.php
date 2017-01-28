@@ -93,6 +93,9 @@ class RegisterController extends Controller
         UserVerification::generate($user);
         UserVerification::send($user, 'Welcome to Bloggercasts. Click to confirm registration');
 
+        // Flash a Message that asks the User to check their Email
+        $request->session()->flash('success', 'Hi ' . $user->name . 'Please click on the confirmation link in your email to activate all features of your account. Until your email is confirmed, you will not be able to download files or view video lessons');
+
         return $this->registered($request, $user)
             ?: redirect($this->redirectPath());
 
