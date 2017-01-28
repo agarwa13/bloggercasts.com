@@ -25,6 +25,10 @@ Route::resource('affiliates','AffiliateController');
 Lesson Resource
 */
 Route::resource('lessons','LessonController');
+/*
+ * AMP Pages for Lessons
+ */
+Route::get('lessons/amp/{slug}','LessonController@showAMP');
 
 /*
 Series Resource
