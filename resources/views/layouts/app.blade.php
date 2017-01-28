@@ -5,6 +5,9 @@
 	@include('layouts.includes.favicons')
 	@include('layouts.includes.tracking-codes')
 
+	@include('includes.person-structured-data-markup')
+	@include('includes.website-structured-data-markup')
+
 	<link rel="stylesheet" href="/css/common.css">
 	<!-- Page Specific Scripts like CSS, Fonts or Header JavaScript -->
 	@stack('header-scripts')

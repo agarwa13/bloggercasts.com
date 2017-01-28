@@ -22,23 +22,22 @@ Route::post('spark/kiosk/affiliates/search','AffiliateController@search');
 Route::resource('affiliates','AffiliateController');
 
 /*
-Lesson Resource
+Lesson Resource + AMP Pages for Lessons
 */
 Route::resource('lessons','LessonController');
-/*
- * AMP Pages for Lessons
- */
 Route::get('lessons/amp/{slug}','LessonController@showAMP');
 
 /*
-Series Resource
+Series Resource + Routes for Editing and Updating the sequence of a series
 */
 Route::resource('series','SeriesController');
+Route::get('/series/{id}/edit-sequence','SeriesController@editSequence');
+Route::put('/series/{id}/update-sequence','SeriesController@updateSequence');
+
 /*
 Download Resource
 */
 Route::resource('downloads','DownloadController');
-
 
 
 /*
@@ -85,6 +84,7 @@ is redirected to this page. This is thrown by the isVerified Middleware that can
 Route::get('user-not-verified',function(){
 	return view('email-verification.user-not-verified');
 });
+
 
 
 /*
