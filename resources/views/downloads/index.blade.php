@@ -1,6 +1,6 @@
-@extends('spark::layouts.app')
+@extends('layouts.app')
 
-@section('content')
+@section('body')
 
     <div class="container">
         <div class="row">
@@ -10,40 +10,38 @@
                         <table class="table table-borderless m-b-none">
                             <thead>
                             <th>Name</th>
-                            <th>Portal</th>
+                            <th>Slug</th>
                             <th>Link</th>
-                            <th></th>
                             </thead>
 
                             <tbody>
-                            @foreach($affiliates as $affiliate)
+                            @foreach($downloads as $download)
                                 <tr>
                                     <!-- Name -->
                                     <td>
-                                        {{$affiliate->name}}
+                                        {{$download->name}}
                                     </td>
 
                                     <!-- Portal -->
                                     <td>
-                                        <a href="{{$affiliate->portal}}">
-                                            Portal
-                                        </a>
+                                        
+                                        {{$download->slug}}
+                                        
                                     </td>
 
                                     <!-- Link -->
                                     <td>
-                                        <button class="btn btn-default copy-button" data-clipboard-text="{{$affiliate->link}}">
+                                        <button class="btn btn-default copy-button" data-clipboard-text="{{$download->file}}">
                                             <i class="fa fa-clone"></i>
                                         </button>
 
-                                    </td>
-
-                                    <td>
-                                        <!-- Edit Affiliate -->
+                                        <!-- Edit download -->
                                         <button class="btn btn-default">
                                             <i class="fa fa-pencil"></i>
                                         </button>
                                     </td>
+
+                                
                                 </tr>
                             @endforeach
                             </tbody>
@@ -57,7 +55,7 @@
 @endsection
 
 
-@section('scripts')
+@section('footer-scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.13/clipboard.min.js"></script>
 
     <script>

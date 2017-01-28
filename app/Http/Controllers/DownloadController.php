@@ -14,7 +14,7 @@ class DownloadController extends Controller
     public function __construct()
     {
         $this->middleware('dev')->except('show');
-        $this->middleware('auth','isVerified');
+        $this->middleware(['auth']);
     }
 
     /**

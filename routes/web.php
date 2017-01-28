@@ -17,10 +17,26 @@ Route::get('/home', 'HomeController@show');
 
 
 /*
-Search for Affiliates in Kiosk
+Search for Affiliates in Kiosk + Affiliate Resource
 */
 Route::post('spark/kiosk/affiliates/search','AffiliateController@search');
+Route::resource('affiliates','AffiliateController');
 
+/*
+Lesson Resource
+*/
+Route::resource('lessons','LessonController');
+
+/*
+Series Resource
+*/
+Route::resource('series','SeriesController');
+
+
+/*
+Download Resource
+*/
+Route::resource('downloads','DownloadController');
 
 /*
 Less Seen Pages

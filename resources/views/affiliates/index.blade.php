@@ -1,6 +1,6 @@
-@extends('spark::layouts.app')
+@extends('layouts.app')
 
-@section('content')
+@section('body')
 
     <div class="container">
         <div class="row">
@@ -12,7 +12,7 @@
                             <th>Name</th>
                             <th>Portal</th>
                             <th>Link</th>
-                            <th></th>
+                            
                             </thead>
 
                             <tbody>
@@ -30,20 +30,18 @@
                                         </a>
                                     </td>
 
-                                    <!-- Link -->
+                                    
                                     <td>
+                                        <!-- Link -->
                                         <button class="btn btn-default copy-button" data-clipboard-text="{{$affiliate->link}}">
                                             <i class="fa fa-clone"></i>
                                         </button>
-
-                                    </td>
-
-                                    <td>
                                         <!-- Edit Affiliate -->
                                         <a class="btn btn-default" href="{{url('/affiliates/'.$affiliate->slug.'/edit')}}">
                                             <i class="fa fa-pencil"></i>
                                         </a>
                                     </td>
+
                                 </tr>
                             @endforeach
                             </tbody>
@@ -60,12 +58,10 @@
 @endsection
 
 
-@section('scripts')
+@section('footer-scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.13/clipboard.min.js"></script>
 
     <script>
         new Clipboard('.copy-button');
     </script>
-
-
 @endsection
