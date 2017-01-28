@@ -179,7 +179,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         // Adding User Verification Service Provider to verify Email Address on Registration
-        // Jrean\UserVerification\UserVerificationServiceProvider::class,
+        Jrean\UserVerification\UserVerificationServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
     ],
