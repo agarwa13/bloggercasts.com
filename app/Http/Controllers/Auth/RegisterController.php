@@ -12,6 +12,7 @@ use Jrean\UserVerification\Facades\UserVerification;
 
 class RegisterController extends Controller
 {
+
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -24,13 +25,32 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+    use VerifiesUsers;
+    
 
     /**
      * Where to redirect users after registration.
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/user-not-verified';
+
+
+    /**
+    * Where to redirect users after they are verified for the first time
+    *
+    * @var string
+    */
+    protected $redirectAfterVerification = '/user-verified';
+
+
+    /**
+    * Where to redirect users if the user is already verified and clicks on a verification link again
+    *
+    * @var string
+    */
+    protected $redirectIfVerified = '/series';
+
 
     /**
      * Create a new controller instance.

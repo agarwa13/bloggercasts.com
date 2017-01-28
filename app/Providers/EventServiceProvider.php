@@ -25,6 +25,7 @@ class EventServiceProvider extends ServiceProvider
 
         'Laravel\Spark\Events\Profile\ContactInformationUpdated' => [
             'Laravel\Spark\Listeners\Profile\UpdateContactInformationOnStripe',
+            'App\Listeners\ResendEmailVerificationRequiredEmail',
         ],
 
         'Laravel\Spark\Events\PaymentMethod\VatIdUpdated' => [

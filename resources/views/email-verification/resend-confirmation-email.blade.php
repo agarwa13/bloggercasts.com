@@ -1,13 +1,12 @@
 @extends('layouts.information')
 
-@section('title','Email Not Verified')
+@section('title','Confirm Email Address')
 
 @section('panel-content')
-
 	<p>Hi {{Request::user()->name}},</p>
 
 	<p>
-	Before you can view lessons or download printables, you need to verify your email address ({{ Request::user()->email }}). To verify your email address you just need to click on the link in the email we have sent you. Our emails do not usually end up in the spam folder, but if it isn't in your inbox, it is worth checking your spam folder.
+	We have sent you another email at {{ Request::user()->email }}. If you click on the link within the email, your account will be activiated and you can enjoy unlimited access to all the videos we have as well as download all our printables.
 	</p>
 
 	<p>

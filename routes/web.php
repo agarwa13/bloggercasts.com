@@ -37,15 +37,37 @@ Download Resource
 */
 Route::resource('downloads','DownloadController');
 
+
+
 /*
 Less Seen Pages
 */
 
+
+/*
+Routes for Verifying the User when he clicks on the link in the Verification Email.
+User Verification setup using: https://github.com/jrean/laravel-user-verification
+*/
+Route::get('email-verification/error', 'Auth\RegisterController@getVerificationError')->name('email-verification.error');
+Route::get('email-verification/check/{token}', 'Auth\RegisterController@getVerification')->name('email-verification.check');
+
+
+/*
+Route for when the user clicks on the verification link for the first time
+*/
+Route::get('user-verified',function(){
+	return view('email-verification.user-verified');
+});
+// $redirectAfterVerification = '/';
+
+/*
+Route for when the user clicks on the resend confirmation email button
+*/
+Route::get('resend-confirmation-email','WelcomeController@resendConfirmationEmail');
+
 /* 
-If the User Attempts to see a page that is only visible to 
-verified users (such as the lessons pages), then the user
-is redirected to this page. This is thrown by the isVerified Middleware
-that can be found in the jrean/laravel-user-verification package
+If the User Attempts to see a page that is only visible to verified users (such as the lessons pages), then the user
+is redirected to this page. This is thrown by the isVerified Middleware that can be found in the jrean/laravel-user-verification package
 */
 Route::get('user-not-verified',function(){
 	return view('email-verification.user-not-verified');

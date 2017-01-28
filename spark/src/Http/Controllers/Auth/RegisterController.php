@@ -11,9 +11,14 @@ use Illuminate\Foundation\Auth\RedirectsUsers;
 use Laravel\Spark\Contracts\Interactions\Auth\Register;
 use Laravel\Spark\Contracts\Http\Requests\Auth\RegisterRequest;
 
+use Jrean\UserVerification\Traits\VerifiesUsers;
+use Jrean\UserVerification\Facades\UserVerification;
+
+
 class RegisterController extends Controller
 {
     use RedirectsUsers;
+    use VerifiesUsers;
 
     /**
      * Create a new authentication controller instance.
@@ -24,7 +29,8 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
 
-        $this->redirectTo = Spark::afterLoginRedirect();
+        // $this->redirectTo = Spark::afterLoginRedirect();
+        $this->redirectTo = '/user-not-verified';
     }
 
     /**
