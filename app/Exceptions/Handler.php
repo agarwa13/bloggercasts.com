@@ -44,6 +44,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+
+        if($exception instanceof UserNotVerifiedException){
+            return redirect('user-not-verified');
+        }
+
         return parent::render($request, $exception);
     }
 

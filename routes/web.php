@@ -23,6 +23,21 @@ Route::post('spark/kiosk/affiliates/search','AffiliateController@search');
 
 
 /*
+Less Seen Pages
+*/
+
+/* 
+If the User Attempts to see a page that is only visible to 
+verified users (such as the lessons pages), then the user
+is redirected to this page. This is thrown by the isVerified Middleware
+that can be found in the jrean/laravel-user-verification package
+*/
+Route::get('user-not-verified',function(){
+	return view('email-verification.user-not-verified');
+});
+
+
+/*
 Grown Up Stuff
 */
 Route::get('dmca-policy',function(){
