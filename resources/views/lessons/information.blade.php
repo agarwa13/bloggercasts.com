@@ -4,30 +4,12 @@
 
     <div class="Video__buttons Box">
         <ul class="utility-naked-list">
-
-            {{--<li>--}}
-                {{--<a href="{{$lesson->video}}" title="Download Video" class="Button Button--with-icon ">--}}
-                    {{--<i class="material-icons">cloud_download</i>--}}
-                    {{--<span>Download</span>--}}
-                {{--</a>--}}
-            {{--</li>--}}
-
             <li>
                 <a href="#disqus_thread" class="Button Button--with-icon">
                     <i class="material-icons">comment</i>
                     <span>Discuss Lesson</span>
                 </a>
             </li>
-
-            @foreach($lesson->downloads as $download)
-                <li>
-                    <a href="/downloads/{{$download->slug}}" class="Button Button--with-icon">
-                        <i class="material-icons">picture_as_pdf</i>
-                        <span>{{$download->name}}</span>
-                    </a>
-                </li>
-            @endforeach
-
         </ul>
     </div>
 
