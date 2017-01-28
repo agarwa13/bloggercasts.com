@@ -1,8 +1,8 @@
-@extends('spark::layouts.app')
+@extends('layouts.app')
 
 @section('title',"Bloggercasts Video Courses on WordPress, Facebook Ads and more.")
 
-@section('content')
+@section('body')
 
     <div class="container">
 

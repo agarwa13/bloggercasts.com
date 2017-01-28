@@ -1,10 +1,10 @@
-@extends('spark::layouts.app')
+@extends('layouts.app')
 
 @section('title')
     {{$series->title}}
 @endsection
 
-@section('content')
+@section('body')
 
     <div class="container-fluid" style="background: #e37222;">
         <div class="Banner Banner--Two-Col">

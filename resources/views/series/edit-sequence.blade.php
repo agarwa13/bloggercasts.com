@@ -1,7 +1,7 @@
-@extends('spark::layouts.app')
+@extends('layouts.app')
 
 
-@section('scripts')
+@push('footer-scripts')
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -28,9 +28,9 @@
     <script>
 
     </script>
-@endsection
+@endpush
 
-@section('content')
+@section('body')
 
     <div class="container">
 

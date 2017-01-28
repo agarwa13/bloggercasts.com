@@ -58,10 +58,10 @@
 @endsection
 
 
-@section('footer-scripts')
+@push('footer-scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.13/clipboard.min.js"></script>
 
     <script>
         new Clipboard('.copy-button');
     </script>
-@endsection
+@endpush

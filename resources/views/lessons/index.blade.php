@@ -1,6 +1,6 @@
-@extends('spark::layouts.app')
+@extends('layouts.app')
 
-@section('content')
+@section('body')
     <div class="Grid__row">
         <!-- Series Episode List -->
         <div class="outline Grid__column nine centered">

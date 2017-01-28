@@ -6,8 +6,6 @@
     </div>
 </div>
 
-@if(Cookie::get('bloggercasts-subscriber') == null)
-
 <div class="container" style="padding-top: 60px;">
     <div class="row">
 
@@ -56,5 +54,3 @@
         </div>
     </div>
 </div>
-
-@endif

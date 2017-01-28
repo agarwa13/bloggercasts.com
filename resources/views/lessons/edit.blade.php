@@ -1,10 +1,10 @@
-@extends('spark::layouts.app')
+@extends('layouts.app')
 
-@section('scripts')
+@push('footer-scripts')
     @include('includes.advanced-textarea')
-@endsection
+@endpush
 
-@section('content')
+@section('body')
 
     <!-- Facebook -->
 
