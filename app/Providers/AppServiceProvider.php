@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Observers\LessonObserver;
+use App\Lesson;
 
 class AppServiceProvider extends ServiceProvider
 {
