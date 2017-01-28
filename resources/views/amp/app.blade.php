@@ -8,17 +8,7 @@
     <link rel="canonical" href="@yield('canonical','https://bloggercasts.com')" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1">
 
-    <!--*
-        *   FavIcons
-        **-->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#1e1e1e">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
+    @include('layouts.includes.favicons')
 
     <!-- Allow web app to be run in full-screen mode. -->
     <meta name="apple-mobile-web-app-capable"
@@ -452,7 +442,7 @@
 <body dir="ltr">
 <header itemscope itemtype="https://schema.org/WPHeader">
     <button class="pull-left fa fa-bars" on='tap:mainSideBar.toggle'></button>
-    <a id="logo" href="https://bloggercasts.com">Bloggercasts</a>
+    <a id="logo" href="{{url('/')}}">Bloggercasts</a>
     <a class="pull-right fa fa-envelope" href="mailto:nikhil@bloggercasts.com"></a>
 </header><!-- TOP NAVBAR ENDS -->
 
@@ -486,9 +476,9 @@
 
     <nav id="menu" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <a href="#" on='tap:mainSideBar.toggle'><i class="fa fa-caret-left"></i>Close Navigation</a>
-        <a href="https://bloggercasts.com"><i class="fa fa-home"></i>Home</a>
-        <a href="https://bloggercasts.com/series"><i class="fa fa-play-circle-o"></i>Browse Series</a>
-        <a href="https://bloggercasts.com/search"><i class="fa fa-search"></i>Search</a>
+        <a href="{{url('/')}}"><i class="fa fa-home"></i>Home</a>
+        <a href="{{url('/series')}}"><i class="fa fa-play-circle-o"></i>Browse Series</a>
+        {{--<a href="https://bloggercasts.com/search"><i class="fa fa-search"></i>Search</a>--}}
     </nav><!-- MENU ENDS -->
 
     <div class="divider colored"></div>
