@@ -15,8 +15,6 @@ class WelcomeController extends Controller
      */
     public function show(Request $request)
     {
-
-    	Mail::to($request->user())->send(new TestEmail());
         return view('welcome');
     }
 }

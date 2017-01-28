@@ -73,31 +73,4 @@ class RegisterController extends Controller
         ]);
     }
 
-
-    /**
-     * Handle a registration request for the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function register(Request $request)
-    {
-
-        $this->validator($request->all())->validate();
-
-        event(new Registered($user = $this->create($request->all())));
-
-        $this->guard()->login($user);
-
-        // Create User Verification Token and Send it to the User
-        UserVerification::generate($user);
-        UserVerification::send($user, 'Welcome to Bloggercasts. Click to confirm registration');
-
-        // Flash a Message that asks the User to check their Email
-        $request->session()->flash('success', 'Hi ' . $user->name . 'Please click on the confirmation link in your email to activate all features of your account. Until your email is confirmed, you will not be able to download files or view video lessons');
-
-        return $this->registered($request, $user)
-            ?: redirect($this->redirectPath());
-
-    }
 }
