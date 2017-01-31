@@ -12,6 +12,7 @@ class LessonController extends Controller
     public function __construct()
     {
         $this->middleware('dev')->except('show','showAMP');
+        $this->middleware('setLessonsViewedCookie')->only('show','showAMP');
     }
 
     /**
