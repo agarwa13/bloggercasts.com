@@ -6,13 +6,15 @@ use Illuminate\Http\Request;
 
 use App\Series;
 use App\Lesson;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Auth;
 
 class LessonController extends Controller
 {
     public function __construct()
     {
         $this->middleware('dev')->except('show','showAMP');
-        $this->middleware('setLessonsViewedCookie')->only('show','showAMP');
+        $this->middleware('setLessonsViewedCookie')->only('show');
     }
 
     /**
@@ -97,7 +99,15 @@ class LessonController extends Controller
     public function show($id)
     {
         $lesson = Lesson::where('slug','=',$id)->first();
-        return view('lessons.show')->with('lesson',$lesson);
+
+        /**
+         * The View will check how many lessons the user has viewed,
+         * If they have viewed more than 3 videos already,
+         * it will show a pop-up asking them to register to
+         * continue viewing the videos
+         */
+        $blockVideo = (!Auth::check() && Cookie::get('lessonsViewed'));
+        return view('lessons.show')->with('lesson',$lesson)->with('blockVideo',$blockVideo);
     }
 
 

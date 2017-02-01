@@ -27,6 +27,10 @@
     @include('lessons.series')
     @include('lessons.discussion')
 
+    @if($blockVideo)
+        @include('includes.block-video-and-request-login')
+    @endif
+
 {{--    @include('includes.subscribe-modal')--}}
 
 @endsection
