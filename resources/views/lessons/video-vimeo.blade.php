@@ -20,6 +20,38 @@
                     // Pinterest Event for Video Playing
                     pintrk('track', 'watchvideo',{video_title: '{{$lesson->slug}}'});
                 });
+
+                @if(Auth::check())
+                player.on('seeked',function(videoData){
+                    /**
+                     * Event Fires once in 250 ms on average.
+                     * We want to update the server, once in
+                     * about 20 seconds
+                     */
+
+                    // Log on Console
+                    console.log('data sent at ' + videoData.seconds);
+
+//                    if( Math.round(videoData.seconds) % 20 == 0){
+
+                        // Update the Server
+                        $.ajax({
+                            url: '/video-viewed',
+                            data: {
+                                lesson_id: '{{$lesson->id}}',
+                                duration_played: Math.round(videoData.seconds) ,
+                                percent_played: Math.round(videoData.percent*100)
+                            },
+                            method: 'POST'
+                        });
+
+
+//                    }
+
+
+                });
+                @endif
+
             </script>
         </div>
     </div>

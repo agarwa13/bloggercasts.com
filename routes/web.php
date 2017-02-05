@@ -14,6 +14,10 @@
 Route::get('/', 'WelcomeController@show');
 Route::get('/home', 'SeriesController@index');
 
+/*
+ * Log Video Views
+ */
+Route::post('video-viewed','VideoViewsController@recordVideoViewed');
 
 /*
 Search for Affiliates in Kiosk + Affiliate Resource
