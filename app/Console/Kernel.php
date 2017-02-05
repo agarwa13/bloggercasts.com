@@ -3,12 +3,9 @@
 namespace App\Console;
 
 use App\Mail\WeeklySummaryForAdmin;
-use App\User;
-use Carbon\Carbon;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 use Illuminate\Support\Facades\Mail;
-use Laravel\Spark\Spark;
 
 class Kernel extends ConsoleKernel
 {
