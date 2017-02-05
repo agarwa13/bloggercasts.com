@@ -34,11 +34,12 @@ class Kernel extends ConsoleKernel
 
         // Email a report of the number of new registrations to the admins
         $schedule->call(function(){
-
             // Send an Email to the Admin
             Mail::to('nikhil@bloggercasts.com')->send(new WeeklySummaryForAdmin());
-
         })->weekly();
+
+        // Populate the Metrics in the Spark Dashboard
+        $schedule->command('spark:kpi')->dailyAt('23:55');
 
     }
 
