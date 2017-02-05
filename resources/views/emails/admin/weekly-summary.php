@@ -1,0 +1,1 @@
+{{ $number_of_new_users }} have signed up during the last 7 days as compared to {{ $number_of_new_users_in_previous_period }} in the previous period.

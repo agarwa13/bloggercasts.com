@@ -2,8 +2,13 @@
 
 namespace App\Console;
 
+use App\Mail\WeeklySummaryForAdmin;
+use App\User;
+use Carbon\Carbon;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\Mail;
+use Laravel\Spark\Spark;
 
 class Kernel extends ConsoleKernel
 {
@@ -26,6 +31,15 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+
+        // Email a report of the number of new registrations to the admins
+        $schedule->call(function(){
+
+            // Send an Email to the Admin
+            Mail::to('nikhil@bloggercasts.com')->send(new WeeklySummaryForAdmin());
+
+        })->weekly();
+
     }
 
     /**
