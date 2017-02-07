@@ -8,7 +8,7 @@
             <script src="https://player.vimeo.com/api/player.js"></script>
 
             <script type="text/javascript">
-                var iFrame = document.querySelector('iframe');
+                var iFrame = document.querySelector('#embed-container iframe');
                 var player = new Vimeo.Player(iFrame);
 
                 player.on('play', function() {
@@ -20,6 +20,20 @@
 
                     // Pinterest Event for Video Playing
                     pintrk('track', 'watchvideo',{video_title: '{{$lesson->slug}}'});
+
+                    @if(Auth::check())
+                    // Update the Server. We set the Seconds and Percentage to 0.
+                    $.ajax({
+                        url: '/video-viewed',
+                        data: {
+                            lesson_id: '{{$lesson->id}}',
+                            duration_played: 0,
+                            percent_played: 0
+                        },
+                        method: 'POST'
+                    });
+                    @endif
+
                 });
 
                 @if(Auth::check())
@@ -54,6 +68,19 @@
                         }, 5000);
                     }
 
+                });
+
+                player.on('ended',function(videoData){
+                    // Update the Server
+                    $.ajax({
+                        url: '/video-viewed',
+                        data: {
+                            lesson_id: '{{$lesson->id}}',
+                            duration_played: Math.round(videoData.seconds) ,
+                            percent_played: Math.round(videoData.percent*100)
+                        },
+                        method: 'POST'
+                    });
                 });
                 @endif
 
