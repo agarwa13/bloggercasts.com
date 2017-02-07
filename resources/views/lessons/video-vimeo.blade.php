@@ -36,9 +36,6 @@
                     if (isFifteen && debounce) {
                         debounce = false;
 
-                        // Log on Console
-                        console.log('data sent at ' + videoData.seconds);
-
                         // Update the Server
                         $.ajax({
                             url: '/video-viewed',
