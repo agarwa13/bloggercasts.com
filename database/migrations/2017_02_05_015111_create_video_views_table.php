@@ -17,7 +17,7 @@ class CreateVideoViewsTable extends Migration
             $table->increments('id');
             $table->integer('lesson_id');
             $table->integer('user_id');
-            $table->integer('percent_player');
+            $table->integer('percent_played');
             $table->integer('duration_played');
             $table->timestamps();
         });

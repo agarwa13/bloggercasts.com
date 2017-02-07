@@ -23,17 +23,21 @@
                 });
 
                 @if(Auth::check())
-                player.on('seeked',function(videoData){
-                    /**
-                     * Event Fires once in 250 ms on average.
-                     * We want to update the server, once in
-                     * about 20 seconds
-                     */
 
-                    // Log on Console
-                    console.log('data sent at ' + videoData.seconds);
+                var debounce = true;
+                var seconds  = 15;
 
-//                    if( Math.round(videoData.seconds) % 20 == 0){
+                player.on('timeupdate',function(videoData){
+
+                    var hasPlayedTime = videoData.seconds;
+                    var intPlayedTime = parseInt(hasPlayedTime, 10);
+                    var isFifteen     = intPlayedTime % seconds === 0 && intPlayedTime !== 0;
+
+                    if (isFifteen && debounce) {
+                        debounce = false;
+
+                        // Log on Console
+                        console.log('data sent at ' + videoData.seconds);
 
                         // Update the Server
                         $.ajax({
@@ -46,9 +50,12 @@
                             method: 'POST'
                         });
 
+                    } else {
 
-//                    }
-
+                        setTimeout(function() {
+                            debounce = true;
+                        }, 5000);
+                    }
 
                 });
                 @endif

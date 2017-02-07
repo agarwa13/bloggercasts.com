@@ -12,6 +12,7 @@
 	<!-- Page Specific Scripts like CSS, Fonts or Header JavaScript -->
 	@stack('header-scripts')
 
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 @endsection
 
@@ -25,4 +26,13 @@
 
 @endsection
 
+@push('footer-scripts')
+<script>
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+		}
+	});
+</script>
+@endpush
 <!-- Page Specific Footer Scripts, Generally JavaScript, can be added using the footer-scripts stack -->

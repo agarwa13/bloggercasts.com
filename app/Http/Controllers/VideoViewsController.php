@@ -30,17 +30,20 @@ class VideoViewsController extends Controller
          * Date Updated
          */
 
-        // Add or Update Database Record
-        $videoView = VideoViews::updateOrCreate(
+        // Find or Create New Database Record
+        $videoView = VideoViews::firstOrNew(
             [
                 'lesson_id' => $request->lesson_id,
                 'user_id' => $request->user()->id
-            ],
-            [
-                'duration_played' => $request->duration_played,
-                'percent_played' => $request->percent_played
             ]
         );
+
+        // Update the Duration Played and Percent Played
+        $videoView->duration_played = max($request->duration_played, $videoView->duration_played);
+        $videoView->percent_played = max($request->percent_played, $videoView->percent_played);
+
+        // Persist to Database
+        $videoView->save();
 
         // Return with a Json Response, Status 200
         return response()
