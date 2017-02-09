@@ -50,4 +50,18 @@ class VideoViewsController extends Controller
             ->json(['success' => true]);
 
     }
+
+    /**
+     * Display Page with list of videos that
+     * this user has completed watching.
+     * @param Request $request
+     */
+    public function displayWatchedVideos(Request $request){
+        // Get the Videos that the user has watched
+        return view('user.watched-videos')
+            ->with('videosViewed',$request->user()->videosViewed()
+//                ->where('video_views.percent_played','<',100)
+                ->orderBy('pivot_updated_at','desc')->paginate(5));
+
+    }
 }

@@ -47,4 +47,13 @@ class User extends SparkUser
         'trial_ends_at' => 'date',
         'uses_two_factor_auth' => 'boolean',
     ];
+
+    /**
+     * Videos Viewed Relationship
+     */
+    public function videosViewed(){
+        return $this->belongsToMany('App\Lesson','video_views')
+            ->withPivot('duration_played', 'percent_played')
+            ->withTimestamps();
+    }
 }

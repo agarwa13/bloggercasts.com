@@ -71,6 +71,15 @@
                                 @include('spark::nav.developer')
                             @endif
 
+                            <!--  Videos -->
+                            <li class="dropdown-header">Videos</li>
+                            <!-- Watched Videos -->
+                            <li>
+                                <a href="/watched">
+                                    <i class="fa fa-fw fa-btn fa-history"></i>Watched
+                                </a>
+                            </li>
+
                             <!-- Subscription Reminders -->
                             @include('spark::nav.subscriptions')
 

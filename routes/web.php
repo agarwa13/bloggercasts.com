@@ -20,6 +20,11 @@ Route::get('/home', 'SeriesController@index');
 Route::post('video-viewed','VideoViewsController@recordVideoViewed');
 
 /*
+ * Allow users to see the videos they have already viewed
+ */
+Route::get('watched','VideoViewsController@displayWatchedVideos');
+
+/*
 Search for Affiliates in Kiosk + Affiliate Resource
 */
 Route::post('spark/kiosk/affiliates/search','AffiliateController@search');
