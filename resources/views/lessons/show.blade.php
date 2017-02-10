@@ -4,8 +4,7 @@
     {{$lesson->title}}
 @endsection
 
-@push('footer-scripts')
-
+@push('header-scripts')
     <link rel="amphtml" href="https://bloggercasts.com/lessons/amp/{{$lesson->slug}}">
     @include('lessons.includes.open-graph-tags')
     @include('lessons.includes.video-structured-data',['lesson' => $lesson])
@@ -30,7 +29,5 @@
     @if($blockVideo)
         @include('includes.block-video-and-request-login')
     @endif
-
-{{--    @include('includes.subscribe-modal')--}}
 
 @endsection
