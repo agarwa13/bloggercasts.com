@@ -8,7 +8,7 @@
             <script src="https://player.vimeo.com/api/player.js"></script>
 
             <script type="text/javascript">
-                var iFrame = document.querySelector('#embed-container iframe');
+                var iFrame = document.querySelector('.embed-container iframe');
                 var player = new Vimeo.Player(iFrame);
 
                 player.on('play', function() {
