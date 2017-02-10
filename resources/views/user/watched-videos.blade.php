@@ -72,11 +72,11 @@
                     duration_played: 100 ,
                     percent_played: 100
                 },
-                method: 'POST'
+                method: 'POST',
+                success: function(){
+                    location.reload();
+                }
             });
-
-            // Refresh the Page
-            location.reload();
 
         }
     </script>
