@@ -26,7 +26,6 @@ class LandingPageController extends Controller
         // gaProperty
         // stripeToken
         // stripeEmail
-
         Stripe::setApiKey(env('STRIPE_SECRET'));
 
         try{

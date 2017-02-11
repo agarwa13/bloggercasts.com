@@ -168,6 +168,8 @@
 
             <form action="/services/eliminate-analytics-spam/thank-you" method="POST" class="form-horizontal">
 
+                {{ csrf_field() }}
+
                 <div class="form-group">
                     <label for="email" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-8">
@@ -185,11 +187,11 @@
                 <script
                         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                         data-key="{{env('STRIPE_KEY')}}"
-                        data-amount="2000"
+                        data-amount="9700"
                         data-name="Nikhil Agarwal"
-                        data-description="2 widgets"
+                        data-description="Eliminate Spam"
                         data-zip-code="true"
-                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-image="{{url('/img/color-logo.png')}}"
                         data-locale="auto">
                 </script>
 
