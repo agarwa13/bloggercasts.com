@@ -159,9 +159,9 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <p>
-                        I just need your email address and GA Property Name or ID (if you have multiple GA Properties).
-                        Once you have completed payment, you can follow along a video I provide for you to share access
-                        to your account with me. I will take over from there.
+                        I just need to know the GA Property Name or ID. Once you have completed payment, you can follow
+                        along a video I provide for you to share access to your account with me.
+                        I will take over from there.
                     </p>
                 </div>
             </div>
@@ -169,13 +169,6 @@
             <form action="/services/eliminate-analytics-spam/thank-you" method="POST" class="form-horizontal">
 
                 {{ csrf_field() }}
-
-                <div class="form-group">
-                    <label for="email" class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-8">
-                        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
-                    </div>
-                </div>
 
                 <div class="form-group">
                     <label for="googleAnalyticsProperty" class="col-sm-2 control-label">GA Property</label>
@@ -188,8 +181,8 @@
                         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                         data-key="{{env('STRIPE_KEY')}}"
                         data-amount="9700"
-                        data-name="Nikhil Agarwal"
-                        data-description="Eliminate Spam"
+                        data-name="Bloggercasts"
+                        data-description="Eliminate GA Spam"
                         data-zip-code="true"
                         data-image="{{url('/img/color-logo.png')}}"
                         data-locale="auto">
