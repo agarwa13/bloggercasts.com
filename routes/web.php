@@ -25,6 +25,11 @@ Route::post('video-viewed','VideoViewsController@recordVideoViewed');
 Route::get('watched','VideoViewsController@displayWatchedVideos');
 
 /*
+ * Landing Pages
+ */
+Route::get('services/eliminate-analytics-spam','LandingPageController@eliminateAnalyticsSpam');
+
+/*
 Search for Affiliates in Kiosk + Affiliate Resource
 */
 Route::post('spark/kiosk/affiliates/search','AffiliateController@search');
