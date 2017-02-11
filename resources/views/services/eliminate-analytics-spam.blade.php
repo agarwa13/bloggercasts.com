@@ -16,7 +16,7 @@
 
             <div class="right">
                 <h1 data-lead-id="headline"><strong>I’LL ELIMINATE SPAM FROM</strong> YOUR GOOGLE ANALYTICS:</h1>
-                <a href="#/optin" data-lead-id="optin-submit"><u>Click Here</u> To Hire Me ($97)</a>
+                <a href="#hire-me" data-lead-id="optin-submit"><u>Click Here</u> To Hire Me ($97)</a>
                 <img src="/img/services-landing-page/lock.png" alt="lock" id="lock" data-lead-id="privacy-img">
                 <p class="privacy" data-lead-id="privacy-text">I respect your privacy and have a ZERO TOLERANCE for spam.</p>
                 <p data-lead-id="content-text">Measure your performance and make decisions on spam-free data. No more messing with filters and no more spam in your Google Analytics.</p>
@@ -148,8 +148,65 @@
                     {{--<img src="/img/services-landing-page/photo3.png" alt="photo" data-lead-id="author-image3">--}}
                 </div>
             </div>
-            <a href="#" data-lead-id="bottom-link">Hire Me ($97)</a>
+            {{--<a href="#" data-lead-id="bottom-link">Hire Me ($97)</a>--}}
         </div>
+    </section>
+
+    <section id="hire-me">
+        <h2 data-lead-id="testimonials-headline">HIRE ME</h2>
+        <div class="wrapper">
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>
+                        I just need your email address and GA Property Name or ID (if you have multiple GA Properties).
+                        Once you have completed payment, you can follow along a video I provide for you to share access
+                        to your account with me. I will take over from there.
+                    </p>
+                </div>
+            </div>
+
+            <form action="/your-server-side-code" method="POST" class="form-horizontal">
+
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="googleAnalyticsProperty" class="col-sm-2 control-label">GA Property</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="googleAnalyticsProperty" placeholder="Google Analytics Property">
+                    </div>
+                </div>
+
+                <script
+                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="{{env('STRIPE_KEY')}}"
+                        data-amount="2000"
+                        data-name="Nikhil Agarwal"
+                        data-description="2 widgets"
+                        data-zip-code="true"
+                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                        data-locale="auto">
+                </script>
+
+            </form>
+
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <br>
+                    <p class="text-muted">
+                        If you have any trouble, simply send an email to nikhil@bloggercasts.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
 @endsection
