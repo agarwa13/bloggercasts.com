@@ -166,19 +166,19 @@
                 </div>
             </div>
 
-            <form action="/your-server-side-code" method="POST" class="form-horizontal">
+            <form action="/services/eliminate-analytics-spam/thank-you" method="POST" class="form-horizontal">
 
                 <div class="form-group">
                     <label for="email" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-8">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <input type="email" class="form-control" id="email" placeholder="Email" name="email">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="googleAnalyticsProperty" class="col-sm-2 control-label">GA Property</label>
                     <div class="col-sm-8">
-                        <input type="text" class="form-control" id="googleAnalyticsProperty" placeholder="Google Analytics Property">
+                        <input type="text" class="form-control" id="googleAnalyticsProperty" placeholder="Google Analytics Property" name="gaProperty">
                     </div>
                 </div>
 

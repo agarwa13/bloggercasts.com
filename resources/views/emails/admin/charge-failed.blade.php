@@ -1,0 +1,1 @@
+A charge on bloggercasts.com is unsuccessful. This isn't a charge by Spark but rather on a landing page such as your Google Analytics Spam Elimination Landing Page.
