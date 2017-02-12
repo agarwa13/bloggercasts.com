@@ -13,43 +13,21 @@ use Stripe\Stripe;
 
 class LandingPageController extends Controller
 {
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function eliminateAnalyticsSpam(){
         return view('services.eliminate-analytics-spam');
     }
 
-    public function purchasedEliminateAnalyticsSpam(Request $request){
-
-        /*
-         * We receive the following from the form that is submitted
-         */
-
-        // gaProperty
-        // stripeToken
-        // stripeEmail
-        Stripe::setApiKey(env('STRIPE_SECRET'));
-
-        try{
-            Charge::create(array(
-                "amount" => 9700,
-                "currency" => "usd",
-                "description" => "Eliminate Spam in gaProperty",
-                "source" => $request->stripeToken
-            ));
-
-            Mail::to('nikhil@bloggercasts.com')
-                ->send(new GoogleAnalyticsEliminateSpamServiceOrderReceived($request->stripeEmail, $request->gaProperty));
-
-            return view('services.eliminate-analytics-spam-thank-you');
-
-        } catch(Card $e) {
-            Mail::to('nikhil@bloggercasts.com')
-                ->send(new ChargeFailed());
-
-            return back()->with('warning','We were unable to charge your card. Please try again.');
-        }
-
-
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function purchasedEliminateAnalyticsSpam(){
+        return view('services.eliminate-analytics-spam-thank-you');
     }
+
+
 }
 
 

@@ -28,7 +28,7 @@ Route::get('watched','VideoViewsController@displayWatchedVideos');
  * Landing Pages
  */
 Route::get('services/eliminate-analytics-spam','LandingPageController@eliminateAnalyticsSpam');
-Route::post('services/eliminate-analytics-spam/thank-you','LandingPageController@purchasedEliminateAnalyticsSpam');
+Route::get('services/eliminate-analytics-spam/thank-you','LandingPageController@purchasedEliminateAnalyticsSpam');
 
 /*
 Search for Affiliates in Kiosk + Affiliate Resource

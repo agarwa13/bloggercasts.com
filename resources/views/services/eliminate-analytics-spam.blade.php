@@ -153,43 +153,23 @@
     </section>
 
     <section id="hire-me">
-        <h2 data-lead-id="testimonials-headline">HIRE ME</h2>
+        <h2 data-lead-id="testimonials-headline">NEXT STEPS</h2>
         <div class="wrapper">
 
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <p>
-                        I just need to know the GA Property Name or ID. Once you have completed payment, you can follow
-                        along a video I provide for you to share access to your account with me.
-                        I will take over from there.
+                        Click on the button below to complete your payment. After payment is completed, you
+                        can follow along a video I provide for you to share admin access to your account with me.
+                    </p>
+                    <p>
+                        I will take over from there. You can always contact me if you have any questions or concerns.
+                        I will be in touch as I make progress on your account.
                     </p>
                 </div>
             </div>
 
-            <form action="/services/eliminate-analytics-spam/thank-you" method="POST" class="form-horizontal">
-
-                {{ csrf_field() }}
-
-                <div class="form-group">
-                    <label for="googleAnalyticsProperty" class="col-sm-2 control-label">GA Property</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" id="googleAnalyticsProperty" placeholder="Google Analytics Property" name="gaProperty">
-                    </div>
-                </div>
-
-                <script
-                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                        data-key="{{env('STRIPE_KEY')}}"
-                        data-amount="9700"
-                        data-name="Bloggercasts"
-                        data-description="Eliminate GA Spam"
-                        data-zip-code="true"
-                        data-image="{{url('/img/color-logo.png')}}"
-                        data-locale="auto">
-                </script>
-
-            </form>
-
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&business=UJF89PR698RRA&lc=US&item_name=Eliminate%20Spam%20from%201%20Google%20Analytics%20Property&no_note=1&no_shipping=2&rm=1&return=https%3a%2f%2fbloggercasts%2ecom%2fservices%2feliminate%2danalytics%2dspam%2fthank%2dyo&cancel_return=https%3a%2f%2fbloggercasts%2ecom%2fservices%2feliminate%2danalytics%2dspam&src=1&a3=97%2e00&p3=1&t3=Y&currency_code=USD&bn=PP%2dSubscriptionsBF%3abtn_subscribeCC_LG%2egif%3aNonHosted">Hire Me</a>
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
