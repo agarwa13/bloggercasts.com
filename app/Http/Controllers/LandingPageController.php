@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\ChargeFailed;
 use App\Mail\GoogleAnalyticsEliminateSpamServiceOrderReceived;
 use App\Mail\SetupAppointmentForFreeWordPressSetup;
+use App\Mail\WordPressSetupServiceRequestReceived;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -38,8 +39,18 @@ class LandingPageController extends Controller
         /*
          * Send an email to the user asking them at what time they will be available
          */
-        Mail::to($request->email)->send(new SetupAppointmentForFreeWordPressSetup());
+        Mail::to($request->email)
+            ->send(new SetupAppointmentForFreeWordPressSetup());
 
+        /*
+         * Send Email to Admin to inform them that someone signed up for the service.
+         */
+        Mail::to('nikhil@bloggercasts.com')
+            ->send(new WordPressSetupServiceRequestReceived($request->email));
+
+        /*
+         * Send the user to the thank you view
+         */
         return view('services.free-wordpress-setup-thank-you');
     }
 

@@ -2,8 +2,10 @@
 Hi!<br>
 <br>
 Nikhil here from bloggercasts.com :).<br>
-Looks like you would like to use our service to setup your blog. Let me know when is a good time to chat.<br>
+
+Looks like you would like to use our service to setup your blog.<br>
 The first step is to schedule a phone call / skype call.<br>
+Let me know when is a good time to chat.<br>
 I am usually available between 5pm and 10pm PST on weekdays (I live in Seattle, WA).<br>
 I am more flexible on the weekends. I am available from 9am to 10pm PST on the weekends.<br>
 Please reply to this email with your availability and your preference (skype or phone call)<br>
