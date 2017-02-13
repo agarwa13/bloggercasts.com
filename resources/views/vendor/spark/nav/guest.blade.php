@@ -44,6 +44,17 @@
                                 <i class="fa fa-fw fa-btn fa-user-secret"></i>Eliminate Spam
                             </a>
                         </li>
+
+                        <!-- WordPress Related Services-->
+                        <li class="dropdown-header">WordPress</li>
+
+                        <!-- Eliminate Spam -->
+                        <li>
+                            <a href="/services/free-wordpress-setup">
+                                <i class="fa fa-fw fa-btn fa-wordpress"></i>Free Blog Setup
+                            </a>
+                        </li>
+
                     </ul>
                 </li>
 
