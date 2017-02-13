@@ -17,8 +17,8 @@
             <div class="right">
                 <h1 data-lead-id="headline"><strong>I’LL ELIMINATE SPAM FROM</strong> YOUR GOOGLE ANALYTICS:</h1>
                 <a href="#hire-me" data-lead-id="optin-submit"><u>Click Here</u> To Hire Me ($97)</a>
-                <img src="/img/services-landing-page/lock.png" alt="lock" id="lock" data-lead-id="privacy-img">
-                <p class="privacy" data-lead-id="privacy-text">I respect your privacy and have a ZERO TOLERANCE for spam.</p>
+                {{--<img src="/img/services-landing-page/lock.png" alt="lock" id="lock" data-lead-id="privacy-img">--}}
+                {{--<p class="privacy" data-lead-id="privacy-text">I respect your privacy and have a ZERO TOLERANCE for spam.</p>--}}
                 <p data-lead-id="content-text">Measure your performance and make decisions on spam-free data. No more messing with filters and no more spam in your Google Analytics.</p>
             </div>
             <div class="left">

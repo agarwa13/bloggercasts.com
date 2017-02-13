@@ -31,7 +31,7 @@ body {
     line-height: 30px;
 }
 
-.wrapper a {
+.wrapper a, .wrapper .submit-button {
     background: #e74536;
     border-bottom: #b6140f solid 4px;
     color: #fffffd;
@@ -48,10 +48,9 @@ body {
     width: 100%;
 }
 
-.wrapper a:hover {
+.wrapper a:hover, .wrapper .submit-button:hover {
     background: #cc2722;
 }
-
 
 /*Wrapper*/
 .wrapper {
@@ -303,7 +302,7 @@ body {
     }
 }
 @media all and (max-width: 550px) {
-    a {
+    a, .submit-button {
         font-size: 18px;
         line-height: 28px;
     }
@@ -435,6 +434,14 @@ body {
     color: black;
 }
 
+#hire-me form{
+    text-align: left;
+}
+
+#hire-me .submit-button{
+
+}
+
 #hire-me h2 {
     color: #e74535;
     font-size: 30px;
@@ -443,4 +450,60 @@ body {
     margin: 0 auto;
     text-align: center;
     max-width: 90%;
+}
+
+
+
+
+#why-bloggercasts {
+    background: #ededed;
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 50px 0px;
+    color: black;
+    /*text-align: center;*/
+    width: 100%;
+}
+
+#why-bloggercasts p{
+    color: black;
+}
+
+#why-bloggercasts h2 {
+    color: #e74535;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 49px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+#why-bloggercasts h3{
+    color: black;
+}
+
+
+
+#accordion a {
+    background: none;
+    border-bottom: none;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    /*text-decoration: none;*/
+    text-align: left;
+    width: auto;
+}
+
+#accordion {
+    color: black;
+    text-align: left;
 }

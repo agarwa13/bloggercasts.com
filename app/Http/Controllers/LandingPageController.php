@@ -28,6 +28,15 @@ class LandingPageController extends Controller
     }
 
 
+    public function freeWordPressSetup(){
+        return view('services.free-wordpress-setup');
+    }
+
+    public function purchasedFreeWordPressSetup(){
+        return view('services.free-wordpress-setup-thank-you');
+    }
+
+
 }
 
 
