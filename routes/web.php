@@ -33,7 +33,7 @@ Route::get('services/eliminate-analytics-spam/thank-you','LandingPageController@
 
 // WordPress Setup
 Route::get('services/free-wordpress-setup','LandingPageController@freeWordPressSetup');
-Route::get('services/free-wordpress-setup/thank-you','LandingPageController@purchasedFreeWordPressSetup');
+Route::post('services/free-wordpress-setup/thank-you','LandingPageController@purchasedFreeWordPressSetup');
 
 /*
 Search for Affiliates in Kiosk + Affiliate Resource

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ChargeFailed;
 use App\Mail\GoogleAnalyticsEliminateSpamServiceOrderReceived;
+use App\Mail\SetupAppointmentForFreeWordPressSetup;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -32,7 +33,13 @@ class LandingPageController extends Controller
         return view('services.free-wordpress-setup');
     }
 
-    public function purchasedFreeWordPressSetup(){
+    public function purchasedFreeWordPressSetup(Request $request){
+
+        /*
+         * Send an email to the user asking them at what time they will be available
+         */
+        Mail::to($request->email)->send(new SetupAppointmentForFreeWordPressSetup());
+
         return view('services.free-wordpress-setup-thank-you');
     }
 
