@@ -28,7 +28,7 @@
     </section>
 
     <section id="features">
-        <h2 data-lead-id="features-headline">THE FOUNDATION OF A SUCCESSFUL BLOG</h2>
+        <h2 data-lead-id="features-headline">FREE, BUT NOT BASIC</h2>
         <div class="wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -46,6 +46,7 @@
                         </p>
                     </div>
 
+                    <h2 data-lead-id="features-headline">THE FOUNDATIONS OF A SUCCESSFUL BLOG</h2>
 
                     <div class="col-md-10 col-md-offset-1">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
