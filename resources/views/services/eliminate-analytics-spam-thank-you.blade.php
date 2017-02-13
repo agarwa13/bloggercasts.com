@@ -40,8 +40,12 @@
                         </div>
 
                         <p class="text-center">
+                            The email address you need to add to your google analytics account is: nikhil@bloggercasts.com
+                        </p>
+                        <p class="text-center">
                             I will keep you updated as I go to war against the spam in your account!
                         </p>
+
                     </div>
 
 
