@@ -14,6 +14,8 @@
 Route::get('/', 'WelcomeController@show');
 Route::get('/home', 'SeriesController@index');
 
+Route::get('/resources','WelcomeController@resources');
+
 /*
  * Log Video Views
  */

@@ -1,0 +1,170 @@
+/*
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#home-page body,
+#home-page h1,
+#home-page h2,
+#home-page h3,
+#home-page h4,
+#home-page h5,
+#home-page h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+#home-page .topnav {
+    font-size: 14px; 
+}
+
+#home-page .lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#home-page .intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/home-page/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#home-page .intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+#home-page .intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+#home-page .intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#home-page .intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    #home-page .intro-message {
+        padding-bottom: 15%;
+    }
+
+    #home-page .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    #home-page ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    #home-page ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    #home-page .intro-divider {
+        width: 100%;
+    }
+}
+
+#home-page .network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#home-page .content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+#home-page .content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+#home-page .section-heading {
+    margin-bottom: 30px;
+}
+
+#home-page .section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+#home-page .banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/home-page/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#home-page .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+#home-page .banner ul {
+    margin-bottom: 0;
+}
+
+#home-page .banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    #home-page ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    #home-page .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+    }
+
+    #home-page ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    #home-page ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+#home-page footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+#home-page p.copyright {
+    margin: 15px 0 0;
+}

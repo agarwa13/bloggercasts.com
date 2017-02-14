@@ -28,5 +28,8 @@ class WelcomeController extends Controller
 		return view('email-verification.resend-confirmation-email');
     }
 
+    public function resources(){
+        return view('pages.resources');
+    }
 
 }
