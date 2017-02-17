@@ -52,7 +52,7 @@ return [
             'driver' => 'sqs',
             'key' => env('AWS_KEY'),
             'secret' => env('AWS_SECRET'),
-            'prefix' => 'https://sqs.us-east-1.amazonaws.com/143787303072',
+            'prefix' => 'https://sqs.us-east-1.amazonaws.com/364788023735',
             'queue' => 'bloggercasts-default',
             'region' => 'us-east-1',
         ],

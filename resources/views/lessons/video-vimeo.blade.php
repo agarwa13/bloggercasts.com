@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class='embed-container'>
-                <iframe src='https://player.vimeo.com/video/{{$lesson->video}}' sandbox="allow-same-origin allow-scripts allow-popups" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+                <iframe src='https://player.vimeo.com/video/{{$lesson->video}}' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen>
                 </iframe>
             </div>
 
