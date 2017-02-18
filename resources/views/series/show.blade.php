@@ -44,7 +44,7 @@
 @include('series.lessons-list')
 @include('series.includes.course-structured-data')
 @include('series.includes.list-structured-data')
-    @if($series->in_development && strlen($series->affiliate_link) > 2)
-        @include('series.includes.affiliate-modal')
-    @endif
+    {{--@if($series->in_development && strlen($series->affiliate_link) > 2)--}}
+        {{--@include('series.includes.affiliate-modal')--}}
+    {{--@endif--}}
 @endsection
