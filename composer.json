@@ -9,16 +9,17 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "aws/aws-sdk-php": "~3.0",
+        "bugsnag/bugsnag-laravel": "^2.0",
+        "facebook/graph-sdk": "*",
         "guzzlehttp/guzzle": "^6.2",
         "jrean/laravel-user-verification": "^4.0",
         "laravel/cashier": "~7.0",
         "laravel/framework": "5.4.*",
         "laravel/spark": "*@dev",
         "laravel/tinker": "~1.0",
-        "aws/aws-sdk-php": "~3.0",
         "league/flysystem-aws-s3-v3": "~1.0",
         "mailerlite/mailerlite-api-v2-php-sdk": "^0.1.8",
-        "facebook/graph-sdk" : "*",
         "vimeo/vimeo-api": "^1.2"
     },
     "require-dev": {

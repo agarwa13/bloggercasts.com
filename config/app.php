@@ -169,6 +169,10 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
+         * Bugsnag Service Provider - Place Above Application Service Providers
+         */
+        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
+        /*
          * Application Service Providers...
          */
         Laravel\Spark\Providers\SparkServiceProvider::class,
@@ -231,8 +235,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         // Adding User Verification Facade to verify Users Email Address upon Registration
-        'UserVerification' => Jrean\UserVerification\Facades\UserVerification::class
-
+        'UserVerification' => Jrean\UserVerification\Facades\UserVerification::class,
+        // Adding Bugsnag Facade
+        'Bugsnag' => Bugsnag\BugsnagLaravel\Facades\Bugsnag::class,
     ],
 
 ];
