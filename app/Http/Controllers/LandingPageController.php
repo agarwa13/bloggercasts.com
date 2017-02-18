@@ -13,6 +13,8 @@ use Stripe\Charge;
 use Stripe\Error\Card;
 use Stripe\Stripe;
 
+use Bugsnag\BugsnagLaravel\Facades\Bugsnag;
+
 class LandingPageController extends Controller
 {
     /**
