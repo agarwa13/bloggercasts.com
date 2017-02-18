@@ -18,12 +18,12 @@
     </url>
 
 
-    <url>
-        <loc>https://bloggercasts.com/search</loc>
+    {{--<url>--}}
+        {{--<loc>https://bloggercasts.com/search</loc>--}}
         {{--<lastmod>{{ $lesson->updated_at->tz('UTC')->toAtomString() }}</lastmod>--}}
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+        {{--<changefreq>monthly</changefreq>--}}
+        {{--<priority>0.6</priority>--}}
+    {{--</url>--}}
 
     <url>
         <loc>https://bloggercasts.com/register</loc>
@@ -54,7 +54,7 @@
     </url>
 
     <url>
-        <loc>https://bloggercasts.com/affiliate</loc>
+        <loc>https://bloggercasts.com/affiliate-disclaimer</loc>
         {{--<lastmod>{{ $lesson->updated_at->tz('UTC')->toAtomString() }}</lastmod>--}}
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>

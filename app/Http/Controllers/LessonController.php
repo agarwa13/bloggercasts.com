@@ -98,7 +98,9 @@ class LessonController extends Controller
      */
     public function show($id)
     {
-        $lesson = Lesson::where('slug','=',$id)->first();
+        $lesson = Lesson::where('slug','=',$id)->firstOrFail();
+
+
 
         /**
          * The View will check how many lessons the user has viewed,

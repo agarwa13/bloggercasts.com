@@ -76,7 +76,7 @@ class SeriesController extends Controller
      */
     public function show($id)
     {
-        $series = Series::where('slug','=',$id)->first();
+        $series = Series::where('slug','=',$id)->firstOrFail();
         return view('series.show')->with('series',$series);
     }
 
