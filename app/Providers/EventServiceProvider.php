@@ -16,6 +16,7 @@ class EventServiceProvider extends ServiceProvider
         'Laravel\Spark\Events\Auth\UserRegistered' => [
             'Laravel\Spark\Listeners\Subscription\CreateTrialEndingNotification',
             'App\Listeners\SendEmailVerificationRequiredEmail',
+            'App\Listeners\AddSubscriberToMailerLite'
         ],
 
         'Laravel\Spark\Events\Subscription\UserSubscribed' => [
