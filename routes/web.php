@@ -37,6 +37,9 @@ Route::get('services/eliminate-analytics-spam/thank-you','LandingPageController@
 Route::get('services/free-wordpress-setup','LandingPageController@freeWordPressSetup');
 Route::post('services/free-wordpress-setup/thank-you','LandingPageController@purchasedFreeWordPressSetup');
 
+// Online Business Schedule
+Route::get('meet-nikhil','LandingPageController@meetNikhil');
+
 /*
 Search for Affiliates in Kiosk + Affiliate Resource
 */
