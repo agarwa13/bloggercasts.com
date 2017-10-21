@@ -15,11 +15,20 @@
         <div class="wrapper">
 
             <div class="right">
-                <h1 data-lead-id="headline"><strong>I’LL SETUP YOUR WORDPRESS</strong> BLOG FOR FREE:</h1>
-                <a href="#hire-me" data-lead-id="optin-submit"><u>Click Here</u> To Get Started (<strike>$247</strike> FREE)</a>
+                <h1 data-lead-id="headline"><strong>I’LL SETUP YOUR WORDPRESS </strong> BLOG FOR FREE* </h1>
+                <a href="#hire-me" data-lead-id="optin-submit"><u>Click Here</u> To Get Started ($247)</a>
                 {{--<img src="/img/services-landing-page/lock.png" alt="lock" id="lock" data-lead-id="privacy-img">--}}
                 {{--<p class="privacy" data-lead-id="privacy-text">I respect your privacy and have a ZERO TOLERANCE for spam.</p>--}}
-                <p data-lead-id="content-text">Most blogs fail within a few months because they lack a solid foundation to generate traffic and engage visitors. Avoid failure by using Bloggercasts to setup your blog to be secure and search engine friendly.</p>
+                <p data-lead-id="content-text">
+                    Most blogs fail within a few months because they lack a solid foundation
+                    to generate traffic and engage visitors. Avoid failure by using Bloggercasts to setup your blog to
+                    be secure and search engine friendly.
+                </p>
+
+                <p>
+                    * Service requires purchase of Divi Theme and purchase of hosting service at Site Ground using our affiliate links.
+                </p>
+
             </div>
             <div class="left">
                 <img src="/img/services-landing-page/nikhil.png" alt="Will" data-lead-id="main-image">
@@ -34,14 +43,9 @@
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <p class="text-center">
-                            While this service is free, it isn't basic in any sense of the word. We first talk to you
-                            on Skype or over the phone to understand your goals. Then, based on your budget, we recommend
-                            a setup that is unique to you and sets you up for success. Once you approve of the plan, we implement it for you within hours.
-                        </p>
-                        <br>
-                        <p>
-                            Due to the personalized nature of this service, we can't tell you upfront what the foundational
-                            building blocks of your site will be. However, in most cases the following is included.
+                            While this service is free, it isn't basic in any sense of the word. We first take the time
+                            to understand your goals. Then, we implement a setup that is unique to you and sets you up
+                            for success.
                         </p>
                     </div>
                 </div>
@@ -57,28 +61,28 @@
                     <div class="col-md-10 col-md-offset-1">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
-                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Hosting Selection
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body">
-                                        <p>
-                                            We help you select a hosting provider based on your goals.
-                                        </p>
-                                        <p>
-                                            Have big goals?
-                                            we will set you up with a VPS. Not so tech savvy? we will recommend hosts
-                                            that provide excellent customer service. Budget conscious? we can help you
-                                            get your site online for less than 1$ per month!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div class="panel panel-default">--}}
+                                {{--<div class="panel-heading" role="tab" id="headingOne">--}}
+                                    {{--<h4 class="panel-title">--}}
+                                        {{--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">--}}
+                                            {{--Hosting Selection--}}
+                                        {{--</a>--}}
+                                    {{--</h4>--}}
+                                {{--</div>--}}
+                                {{--<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">--}}
+                                    {{--<div class="panel-body">--}}
+                                        {{--<p>--}}
+                                            {{--We help you select a hosting provider based on your goals.--}}
+                                        {{--</p>--}}
+                                        {{--<p>--}}
+                                            {{--Have big goals?--}}
+                                            {{--we will set you up with a VPS. Not so tech savvy? we will recommend hosts--}}
+                                            {{--that provide excellent customer service. Budget conscious? we can help you--}}
+                                            {{--get your site online for less than 1$ per month!--}}
+                                        {{--</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo">
@@ -90,52 +94,53 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
-                                        <p>We install self-hosted WordPress software and configure it based on best practices.</p>
-                                        <p>We can manage complex installations such as those with a dedicated machine for the database as well as simple one-click installs on shared hosting providers.</p>
-                                        <p>In addition, we follow best practices when configuring your WordPress install. The defaults aren't always the best choice.</p>
+                                        <p>
+                                            We install self-hosted WordPress software and configure it based on best practices.
+                                        </p>
+                                        <p>
+                                            We update the permalink settings to be search engine friendly, delete the default posts and comments. We also setup the home page to be either a static page or a page that displays the latest blog posts that you will be publishing.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            Theme Selection
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
-                                        <p>
-                                            We work with you to pick the best WordPress theme.
-                                        </p>
-                                        <p>
-                                            We work within your budget and ensure that your theme meets the
-                                            needs of the modern web. We ensure that the theme is mobile friendly and
-                                            can be search engine optimized.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div class="panel panel-default">--}}
+                                {{--<div class="panel-heading" role="tab" id="headingThree">--}}
+                                    {{--<h4 class="panel-title">--}}
+                                        {{--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">--}}
+                                            {{--Theme Selection--}}
+                                        {{--</a>--}}
+                                    {{--</h4>--}}
+                                {{--</div>--}}
+                                {{--<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">--}}
+                                    {{--<div class="panel-body">--}}
+                                        {{--<p>--}}
+                                            {{--We work with you to pick the best WordPress theme.--}}
+                                        {{--</p>--}}
+                                        {{--<p>--}}
+                                            {{--We work within your budget and ensure that your theme meets the--}}
+                                            {{--needs of the modern web. We ensure that the theme is mobile friendly and--}}
+                                            {{--can be search engine optimized.--}}
+                                        {{--</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingFour">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            Search Engine Optimization
+                                            Search Engine Optimized
                                         </a>
                                     </h4>
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                     <div class="panel-body">
                                         <p>
-                                            We ensure your site can be indexed by Google and implement SEO best practices.
-                                            This allows your site to rank higher in Google.
+                                            We ensure your site can be indexed by Google and implements On-Page SEO best practices. This allows people to find your site when they search for topics you write about on Google Search.
                                         </p>
                                         <p>
-                                            We show you how you to control the title and description that Google displays
-                                            in the Search Results that display a link to your site.
+                                            We also show you how you to control the title and description that Google displays in the Search Results that display a link to your site.
                                         </p>
                                     </div>
                                 </div>
@@ -145,7 +150,7 @@
                                 <div class="panel-heading" role="tab" id="headingFive">
                                     <h4 class="panel-title">
                                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            Google Search Console
+                                            Google Search Console / Webmaster Tools
                                         </a>
                                     </h4>
                                 </div>
@@ -153,8 +158,7 @@
                                     <div class="panel-body">
                                         <p>
                                             We connect your site to Google Search Console and submit a sitemap so you
-                                            can monitor your site's performance in Google Search and ensure that you
-                                            continue to follow SEO best practices.
+                                            can monitor your site's performance in Google Search.
                                         </p>
                                         <p>
                                             We show you around the Google Search Console and help you understand how
@@ -186,27 +190,27 @@
                                 </div>
                             </div>
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingSeven">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                            Privacy Policy and Cookie Law
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                                    <div class="panel-body">
-                                        <p>
-                                            We help you create and implement a Privacy Policy and Cookie Law Solution for your site.
-                                        </p>
-                                        <p>
-                                            The legal side of running a blog is often forgotten. A privacy policy and
-                                            cookie law solution (if you are based in certain parts of the world) are
-                                            necessary for your site.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div class="panel panel-default">--}}
+                                {{--<div class="panel-heading" role="tab" id="headingSeven">--}}
+                                    {{--<h4 class="panel-title">--}}
+                                        {{--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">--}}
+                                            {{--Privacy Policy and Cookie Law--}}
+                                        {{--</a>--}}
+                                    {{--</h4>--}}
+                                {{--</div>--}}
+                                {{--<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">--}}
+                                    {{--<div class="panel-body">--}}
+                                        {{--<p>--}}
+                                            {{--We help you create and implement a Privacy Policy and Cookie Law Solution for your site.--}}
+                                        {{--</p>--}}
+                                        {{--<p>--}}
+                                            {{--The legal side of running a blog is often forgotten. A privacy policy and--}}
+                                            {{--cookie law solution (if you are based in certain parts of the world) are--}}
+                                            {{--necessary for your site.--}}
+                                        {{--</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingEight">
@@ -219,10 +223,11 @@
                                 <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
                                     <div class="panel-body">
                                         <p>
-                                            We enable caching (browser and server-side) to maximize the speed of your setup.
+                                            We enable caching (browser and server-side) to maximize the speed of your setup. We go a step
+                                            further by enabling all the features that Site Ground has to offer including Cloud Flare.
                                         </p>
                                         <p>
-                                            Our setup ensures even a shared hosting server can handle tens of thousands
+                                            Our setup ensures even a shared hosting server can handle hundreds of thousands
                                             of views per month without the host throttling your account.
                                         </p>
                                     </div>
@@ -241,7 +246,6 @@
                                     <div class="panel-body">
                                         <p>
                                             We add security plugins to help protect your site from hackers.
-                                            Depending on your budget, we configure a fire wall for your site.
                                         </p>
                                         <p>
                                             WordPress sites are the most common targets of hacks. Our security plugins
@@ -264,11 +268,6 @@
                                         <p>
                                             We install a plugin to backup your site automatically at a frequency that
                                             makes sense for your site.
-                                        </p>
-                                        <p>
-                                            Depending on your budget, we enable live, incremental backups that provides
-                                            a superior experience if you ever need to recover your site. Backups are the
-                                            best protection against hackers.
                                         </p>
                                     </div>
                                 </div>
@@ -295,29 +294,29 @@
                                 </div>
                             </div>
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwelve">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                                            Mailing List Integration
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
-                                    <div class="panel-body">
-                                        <p>
-                                            We will help you select a mailing list provider. Once selected, we will setup
-                                            your domain with the mailing list provider so you can start
-                                            growing your mailing list immediately.
-                                        </p>
-                                        <p>
-                                            Ask 10 successful bloggers what their biggest regret is, 5 will reply that
-                                            they didn't start their mailing list soon enough (and the remaining 5 will
-                                            wish they had Bloggercasts to help them setup their blog).
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div class="panel panel-default">--}}
+                                {{--<div class="panel-heading" role="tab" id="headingTwelve">--}}
+                                    {{--<h4 class="panel-title">--}}
+                                        {{--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">--}}
+                                            {{--Mailing List Integration--}}
+                                        {{--</a>--}}
+                                    {{--</h4>--}}
+                                {{--</div>--}}
+                                {{--<div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">--}}
+                                    {{--<div class="panel-body">--}}
+                                        {{--<p>--}}
+                                            {{--We will help you select a mailing list provider. Once selected, we will setup--}}
+                                            {{--your domain with the mailing list provider so you can start--}}
+                                            {{--growing your mailing list immediately.--}}
+                                        {{--</p>--}}
+                                        {{--<p>--}}
+                                            {{--Ask 10 successful bloggers what their biggest regret is, 5 will reply that--}}
+                                            {{--they didn't start their mailing list soon enough (and the remaining 5 will--}}
+                                            {{--wish they had Bloggercasts to help them setup their blog).--}}
+                                        {{--</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingThirteen">
@@ -336,41 +335,41 @@
                                 </div>
                             </div>
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFourteen">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                                            Pinterest Site Verification
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
-                                    <div class="panel-body">
-                                        <p>
-                                            We will verify your site in your Pinterest Account. This will create a
-                                            link within your Pinterest Profile to your site.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div class="panel panel-default">--}}
+                                {{--<div class="panel-heading" role="tab" id="headingFourteen">--}}
+                                    {{--<h4 class="panel-title">--}}
+                                        {{--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">--}}
+                                            {{--Pinterest Site Verification--}}
+                                        {{--</a>--}}
+                                    {{--</h4>--}}
+                                {{--</div>--}}
+                                {{--<div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">--}}
+                                    {{--<div class="panel-body">--}}
+                                        {{--<p>--}}
+                                            {{--We will verify your site in your Pinterest Account. This will create a--}}
+                                            {{--link within your Pinterest Profile to your site.--}}
+                                        {{--</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFifteen">
-                                    <h4 class="panel-title">
-                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                                            Training and Support
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
-                                    <div class="panel-body">
-                                        <p>
-                                            We will provide you with high quality video tutorials to help you publish
-                                            your first blog post.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div class="panel panel-default">--}}
+                                {{--<div class="panel-heading" role="tab" id="headingFifteen">--}}
+                                    {{--<h4 class="panel-title">--}}
+                                        {{--<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">--}}
+                                            {{--Training and Support--}}
+                                        {{--</a>--}}
+                                    {{--</h4>--}}
+                                {{--</div>--}}
+                                {{--<div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">--}}
+                                    {{--<div class="panel-body">--}}
+                                        {{--<p>--}}
+                                            {{--We will provide you with high quality video tutorials to help you publish--}}
+                                            {{--your first blog post.--}}
+                                        {{--</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
                         </div>
                     </div>
@@ -403,9 +402,9 @@
                         </p>
 
                         <p class="text-left">
-                            Professionally, it makes good business sense. Most visitors who use our service, use our affiliate links.
-                            When you use our affiliate links, you get a discount at the hosting provider or the mailing list service
-                            and we get a commission from the site you made a purchase at. It is a win-win.
+                            Professionally, it makes good business sense. Visitors who use our service, use our affiliate links.
+                            When you use our affiliate links, you get a discount and we get a commission from the site you made
+                            a purchase at. It is a win-win.
                         </p>
 
                         <p class="text-left">
@@ -433,15 +432,15 @@
                             to you on the phone and understand your goals. They simply click a few buttons and leave you to figure it out.
                         </p>
 
-                        <h3>Affiliate Purchase Not Required</h3>
-                        <p class="text-left">
-                            Every other site offering a similar service forces you to first make a purchase using
-                            their affiliate links. That isn't how we roll.
-                        </p>
-                        <p class="text-left">
-                            We understand your unique vision and recommend the services that are appropriate for you.
-                            We often recommend free services and even premium services that we do not have an affiliate relationship with.
-                        </p>
+                        {{--<h3>Affiliate Purchase Not Required</h3>--}}
+                        {{--<p class="text-left">--}}
+                            {{--Every other site offering a similar service forces you to first make a purchase using--}}
+                            {{--their affiliate links. That isn't how we roll.--}}
+                        {{--</p>--}}
+                        {{--<p class="text-left">--}}
+                            {{--We understand your unique vision and recommend the services that are appropriate for you.--}}
+                            {{--We often recommend free services and even premium services that we do not have an affiliate relationship with.--}}
+                        {{--</p>--}}
 
                         <h3>Experience</h3>
                         <p class="text-left">
@@ -453,9 +452,8 @@
 
                         <h3>Comprehensive</h3>
                         <p class="text-left">
-                            Integration with Mailing Lists, Pinterest Verification, Google Search Console and Google
-                            Analytics Integration and setup of a professional email address are not typically included
-                            with other similar services.
+                            Integration with Google Search Console and Google Analytics as well as setup of a professional
+                            email address are not typically included with other similar services.
                         </p>
                         <p class="text-left">
                             We help you setup everything you need to be successful as a blogger. We don't throw over
@@ -524,20 +522,32 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <p>
-                        Simple, enter your email below to schedule a call with me. Don't worry you aren't signing up for my mailing list.
-                        I hate spam and I will only use your email address to contact you regarding setting up your blog.
+                        Simple, schedule a call with me.
+                    </p>
+
+                    <p>
+                        You don't need to prepare for the call. During the call, we will discuss the goals for your
+                        website. After discussing your goals, I will help you share your screen with me and walk you
+                        through purchasing the hosting and the theme.
+                    </p>
+
+                    <p>
+                        About one hour later, I will deliver the website to you!
                     </p>
 
                     <br>
 
-                    <form action="/services/free-wordpress-setup/thank-you" method="POST">
-                        {{ csrf_field() }}
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input class="form-control" type="text" name="email" placeholder="nikhil@bloggercasts.com" value="@if(Auth::check()){{Request::user()->email}}@endif">
-                        </div>
-                        <input type="submit" class="submit-button">
-                    </form>
+                    <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13354008" width="100%" height="800" frameBorder="0"></iframe>
+                    <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
+
+                    {{--<form action="/services/free-wordpress-setup/thank-you" method="POST">--}}
+                        {{--{{ csrf_field() }}--}}
+                        {{--<div class="form-group">--}}
+                            {{--<label>Email</label>--}}
+                            {{--<input class="form-control" type="text" name="email" placeholder="nikhil@bloggercasts.com" value="@if(Auth::check()){{Request::user()->email}}@endif">--}}
+                        {{--</div>--}}
+                        {{--<input type="submit" class="submit-button">--}}
+                    {{--</form>--}}
 
                 </div>
             </div>
@@ -552,10 +562,13 @@
                     <p class="text-muted">
                         If you have any trouble, simply send an email to nikhil@bloggercasts.com
                     </p>
-                    <br>
-                    <p class="text-muted text-left">
-                        *This service is exclusively for new bloggers. Please do not use this service if you already purchased hosting. While there is no affiliate purchase required, we rely on the chance that you will purchase hosting through our affiliate link to keep this service free.
-                    </p>
+                    {{--<br>--}}
+                    {{--<p class="text-muted text-left">--}}
+                        {{--*This service is exclusively for new bloggers. Please do not use this service if you already purchased hosting. While there is no affiliate purchase required, we rely on the chance that you will purchase hosting through our affiliate link to keep this service free.--}}
+                    {{--</p>--}}
+
+
+
                 </div>
             </div>
 

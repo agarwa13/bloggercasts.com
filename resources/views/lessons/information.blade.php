@@ -1,7 +1,5 @@
 <div class="Video__information container wrap" style="margin-top: 30px;">
 
-
-
     {{--<div class="Video__buttons Box">--}}
         {{--<ul class="utility-naked-list">--}}
             {{--<li>--}}
@@ -12,8 +10,6 @@
             {{--</li>--}}
         {{--</ul>--}}
     {{--</div>--}}
-
-
 
 <div class="Video__details Box Box--Large">
     <div class="Video__body">

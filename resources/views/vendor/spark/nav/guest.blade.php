@@ -36,14 +36,14 @@
                     <!-- Google Analytics Related Services-->
                     <ul class="dropdown-menu" role="menu">
 
-                        <li class="dropdown-header">Google Analytics</li>
+                        {{--<li class="dropdown-header">Google Analytics</li>--}}
 
-                        <!-- Eliminate Spam -->
-                        <li>
-                            <a href="/services/eliminate-analytics-spam">
-                                <i class="fa fa-fw fa-btn fa-user-secret"></i>Eliminate Spam
-                            </a>
-                        </li>
+                        {{--<!-- Eliminate Spam -->--}}
+                        {{--<li>--}}
+                            {{--<a href="/services/eliminate-analytics-spam">--}}
+                                {{--<i class="fa fa-fw fa-btn fa-user-secret"></i>Eliminate Spam--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
 
                         <!-- WordPress Related Services-->
                         <li class="dropdown-header">WordPress</li>
@@ -51,7 +51,7 @@
                         <!-- Eliminate Spam -->
                         <li>
                             <a href="/services/free-wordpress-setup">
-                                <i class="fa fa-fw fa-btn fa-wordpress"></i>Free Blog Setup
+                                <i class="fa fa-fw fa-btn fa-wordpress"></i>Blog Setup
                             </a>
                         </li>
 
