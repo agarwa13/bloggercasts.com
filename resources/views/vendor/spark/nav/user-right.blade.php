@@ -7,8 +7,7 @@
         {{--<span class="caret"></span>--}}
     </a>
 
-
-    <ul class="dropdown-menu" role="menu">
+    {{--<ul class="dropdown-menu" role="menu">--}}
         {{--<!-- Google Analytics Related Services-->--}}
         {{--<li class="dropdown-header">Google Analytics</li>--}}
 
@@ -19,15 +18,15 @@
             {{--</a>--}}
         {{--</li>--}}
 
-        <!-- WordPress Related Services-->
-        <li class="dropdown-header">WordPress</li>
+        {{--<!-- WordPress Related Services-->--}}
+        {{--<li class="dropdown-header">WordPress</li>--}}
 
-        <!-- Eliminate Spam -->
-        <li>
-            <a href="/services/free-wordpress-setup">
-                <i class="fa fa-fw fa-btn fa-wordpress"></i>Blog Setup
-            </a>
-        </li>
+        {{--<!-- Eliminate Spam -->--}}
+        {{--<li>--}}
+            {{--<a href="/services/free-wordpress-setup">--}}
+                {{--<i class="fa fa-fw fa-btn fa-wordpress"></i>Blog Setup--}}
+            {{--</a>--}}
+        {{--</li>--}}
 
-    </ul>
+    {{--</ul>--}}
 </li>
