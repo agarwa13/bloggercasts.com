@@ -25,7 +25,7 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <!-- Right Side Of Navbar -->
-                <li class="dropdown">
+                {{--<li class="dropdown">--}}
                     <!-- User Photo / Name -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         Services
@@ -34,7 +34,7 @@
                     </a>
 
                     <!-- Google Analytics Related Services-->
-                    <ul class="dropdown-menu" role="menu">
+                    {{--<ul class="dropdown-menu" role="menu">--}}
 
                         {{--<li class="dropdown-header">Google Analytics</li>--}}
 
@@ -46,17 +46,17 @@
                         {{--</li>--}}
 
                         <!-- WordPress Related Services-->
-                        <li class="dropdown-header">WordPress</li>
+                        {{--<li class="dropdown-header">WordPress</li>--}}
 
                         <!-- Eliminate Spam -->
-                        <li>
-                            <a href="/services/free-wordpress-setup">
-                                <i class="fa fa-fw fa-btn fa-wordpress"></i>Blog Setup
-                            </a>
-                        </li>
+                        {{--<li>--}}
+                            {{--<a href="/services/free-wordpress-setup">--}}
+                                {{--<i class="fa fa-fw fa-btn fa-wordpress"></i>Blog Setup--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
 
-                    </ul>
-                </li>
+                    {{--</ul>--}}
+                {{--</li>--}}
 
                 <li><a href="/login" class="navbar-link">Login</a></li>
                 <li><a href="/register" class="navbar-link">Register</a></li>

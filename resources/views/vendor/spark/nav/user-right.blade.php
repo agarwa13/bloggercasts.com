@@ -1,11 +1,11 @@
 <!-- Right Side Of Navbar -->
-<li class="dropdown">
-    <!-- User Photo / Name -->
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-        Services
+{{--<li class="dropdown">--}}
+    {{--<!-- User Photo / Name -->--}}
+    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">--}}
+        {{--Services--}}
         {{--<img :src="user.photo_url" class="spark-nav-profile-photo m-r-xs">--}}
         {{--<span class="caret"></span>--}}
-    </a>
+    {{--</a>--}}
 
     {{--<ul class="dropdown-menu" role="menu">--}}
         {{--<!-- Google Analytics Related Services-->--}}
@@ -29,4 +29,4 @@
         {{--</li>--}}
 
     {{--</ul>--}}
-</li>
+{{--</li>--}}
