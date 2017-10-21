@@ -30,15 +30,15 @@ Route::get('watched','VideoViewsController@displayWatchedVideos');
  * Landing Pages
  */
 // Eliminate Spam from Google Analytics
-Route::get('services/eliminate-analytics-spam','LandingPageController@eliminateAnalyticsSpam');
-Route::get('services/eliminate-analytics-spam/thank-you','LandingPageController@purchasedEliminateAnalyticsSpam');
+//Route::get('services/eliminate-analytics-spam','LandingPageController@eliminateAnalyticsSpam');
+//Route::get('services/eliminate-analytics-spam/thank-you','LandingPageController@purchasedEliminateAnalyticsSpam');
 
 // WordPress Setup
-Route::get('services/free-wordpress-setup','LandingPageController@freeWordPressSetup');
-Route::post('services/free-wordpress-setup/thank-you','LandingPageController@purchasedFreeWordPressSetup');
+//Route::get('services/free-wordpress-setup','LandingPageController@freeWordPressSetup');
+//Route::post('services/free-wordpress-setup/thank-you','LandingPageController@purchasedFreeWordPressSetup');
 
 // Online Business Schedule
-Route::get('meet-nikhil','LandingPageController@meetNikhil');
+//Route::get('meet-nikhil','LandingPageController@meetNikhil');
 
 /*
 Search for Affiliates in Kiosk + Affiliate Resource
